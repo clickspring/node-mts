@@ -1,0 +1,25 @@
+{
+  "name": "node-mts",
+  "version": "0.0.1",
+  "description": "Multiple Time Series Analyses",
+  "main": "index.js",
+  "author": {
+    "name": "clickspring",
+    "url": "https://github.com/clickspring"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clickspring/node-mts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/clickspring/node-mts.git/issues"
+  },
+  "keywords": ["multiple", "time", "series", "analyses", "mts", "node-mts", "timeseries"],
+  "licenses": [{
+    "type": "MIT",
+    "url": "https://github.com/lorenwest/node-monitor/blob/master/LICENSE"
+  }]
+}
