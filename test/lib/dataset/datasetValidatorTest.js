@@ -24,25 +24,25 @@ describe('DatasetValidator', function() {
         });
     });
 
-    describe('validateValues of Dataset', function() {
+    describe('validateData of Dataset', function() {
         it('should throw an error because values are not defined', function() {
-            expect(() => DatasetValidator.validateValues()).to.throw('Values of Dataset must be an array.');
+            expect(() => DatasetValidator.validateData()).to.throw('Values of Dataset must be an array.');
         });
 
         it('should throw an error because array of values has no values', function() {
-            expect(() => DatasetValidator.validateValues([])).to.throw('Values of Dataset must be an array with length greater than zero.');
+            expect(() => DatasetValidator.validateData([])).to.throw('Values of Dataset must be an array with length greater than zero.');
         });
 
         it('should throw an error because rows of values must be array\'s', function() {
-            expect(() => DatasetValidator.validateValues([1, 2])).to.throw('Rows of Dataset must be array\'s.');
+            expect(() => DatasetValidator.validateData([1, 2])).to.throw('Rows of Dataset must be array\'s.');
         });
 
         it('should throw an error because all rows of values must have the same length', function() {
-            expect(() => DatasetValidator.validateValues([[1, 2], [2]])).to.throw('All rows of Dataset must have the same length.');
+            expect(() => DatasetValidator.validateData([[1, 2], [2]])).to.throw('All rows of Dataset must have the same length.');
         });
 
         it('should throw an error because all values must be number\'s', function() {
-            expect(() => DatasetValidator.validateValues([[1, 2], [2, 'value']])).to.throw('All values of Dataset must be number\'s.');
+            expect(() => DatasetValidator.validateData([[1, 2], [2, 'value']])).to.throw('All values of Dataset must be number\'s.');
         });
     });
 
