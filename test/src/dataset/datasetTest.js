@@ -1,4 +1,4 @@
-import DataSet from './../../../lib/dataset/dataset';
+import DataSet from './../../../src/dataset/dataset';
 import { expect } from 'chai';
 
 describe('Dataset', function() {
